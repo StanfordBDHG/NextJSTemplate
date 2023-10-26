@@ -1,0 +1,41 @@
+{
+  "name": "typescripttemplate",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Stanford BDHG TypeScript Template",
+  "keywords": [
+    "Stanford",
+    "Biodesign"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StanfordBDHG/TypeScriptTemplate"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix & prettier --write ."
+  },
+  "dependencies": {
+    "next": "^14",
+    "react": "^18",
+    "react-dom": "^18",
+    "sharp": "^0.32"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "^14",
+    "eslint-config-prettier": "^9",
+    "eslint-plugin-prettier": "^5",
+    "postcss": "^8",
+    "prettier": "^3",
+    "typescript": "^5"
+  }
+}
