@@ -1,0 +1,2 @@
+# TypeScriptTemplate
+Type Script Template
