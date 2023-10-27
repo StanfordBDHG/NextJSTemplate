@@ -16,3 +16,6 @@ jobs:
   reuse_action:
     name: REUSE Compliance Check
     uses: StanfordSpezi/.github/.github/workflows/reuse.yml@v2
+  eslint:
+    name: ESLint
+    uses: ./.github/.github/workflows/eslint.yml
