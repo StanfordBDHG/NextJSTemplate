@@ -1,4 +1,12 @@
+#
+# This source file is part of the Stanford Biodesign Digital Health TypeScript Template open-source project
 # Based on the docker file found at https://github.com/vercel/next.js/blob/canary/examples/with-docker/Dockerfile.
+#
+# SPDX-FileCopyrightText: 2023 Stanford University and the project authors (see CONTRIBUTORS.md)
+#
+# SPDX-License-Identifier: MIT
+#
+
 
 FROM node:18-alpine AS base
 

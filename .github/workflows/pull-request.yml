@@ -6,15 +6,13 @@
 # SPDX-License-Identifier: MIT
 #
 
-.git
-.next
-.results
-scripts
-*Dockerfile*
-.dockerignore
-npm-debug.log
-README.md
-LICENSE.md
-LICENSES
-node_modules
-.env
+name: Pull Request
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  reuse_action:
+    name: REUSE Compliance Check
+    uses: StanfordSpezi/.github/.github/workflows/reuse.yml@v2
