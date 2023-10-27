@@ -14,7 +14,7 @@ on:
   workflow_call:
 
 jobs:
-  reuse_action:
+  reuseaction:
     name: REUSE Compliance Check
     uses: StanfordSpezi/.github/.github/workflows/reuse.yml@v2
   eslint:

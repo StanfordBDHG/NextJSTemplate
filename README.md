@@ -30,6 +30,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can edit the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Using Docker
+
+1. [Install Docker](https://docs.docker.com/get-docker/) on your machine.
+2. Build your container: `docker build -t nextjs-docker .`.
+3. Run your container: `docker run -p 3000:3000 nextjs-docker`.
+
+You can view your images created with `docker images`.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
