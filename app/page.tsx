@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="container">
       <Image
-        src="/stanfordbiodesign.png"
+        src={`${process.env.basePath}/stanfordbiodesign.png`}
         alt="Stanford Biodesign Logo"
         width={200}
         height={200}

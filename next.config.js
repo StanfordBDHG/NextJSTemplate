@@ -10,7 +10,7 @@
 
 const output = process.env.NEXT_JS_OUTPUT || 'standalone'
 const imagesUnoptimized = process.env.NEXT_JS_IMAGES_UNOPTIMIZED == 'true'
-const basePath = process.env.NEXT_JS_BASE_PATH || ''
+const basePath = process.env.NEXT_JS_BASE_PATH ?? ''
 
 const nextConfig = {
   reactStrictMode: true,
@@ -19,6 +19,9 @@ const nextConfig = {
     unoptimized: imagesUnoptimized,
   },
   basePath: basePath,
+  env: {
+    basePath: basePath,
+  },
 }
 
 module.exports = nextConfig
