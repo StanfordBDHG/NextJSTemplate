@@ -1,0 +1,24 @@
+#
+# This source file is part of the Stanford Biodesign Digital Health TypeScript Template open-source project
+#
+# SPDX-FileCopyrightText: 2023 Stanford University and the project authors (see CONTRIBUTORS.md)
+#
+# SPDX-License-Identifier: MIT
+#
+
+name: Deployment
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  buildandtest:
+    name: Build and Test
+    uses: ./.github/workflows/build-and-test.yml
+  nextjsgithubpages:
+    name: Deploy Next.js site to GitHub Pages
+    needs: buildandtest
+    uses: ./.github/workflows/nextjs-github-pages.yml
