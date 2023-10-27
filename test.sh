@@ -10,7 +10,7 @@
 
 set -e
 
-CONTENT=$(curl --fail http://localhost:3000)
+CONTENT=$(curl --fail http://localhost)
 echo "$CONTENT" | grep "Welcome to the Stanford Biodesign Digital Health TypeScript Template"
 
 echo "✅ Test Passed!"
