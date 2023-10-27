@@ -19,3 +19,6 @@ jobs:
   eslint:
     name: ESLint
     uses: ./.github/workflows/eslint.yml
+  testandcoverage:
+    name: Test and Coverage
+    uses: ./.github/workflows/npm-test-and-coverage.yml
