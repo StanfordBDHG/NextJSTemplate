@@ -27,4 +27,5 @@ jobs:
     name: Docker Compose & Test
     uses: ./.github/workflows/docker-compose-test.yml
     with:
+      dockerComposeFile: docker-compose-development.yml
       testscript: test.sh
