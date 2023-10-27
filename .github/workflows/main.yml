@@ -22,4 +22,4 @@ jobs:
   nextjsgithubpages:
     name: Deploy Next.js site to GitHub Pages
     needs: buildandtest
-    uses: ./.github/workflows/nextjs-github-pages.yml@v2
+    uses: ./.github/workflows/nextjs-github-pages.yml
