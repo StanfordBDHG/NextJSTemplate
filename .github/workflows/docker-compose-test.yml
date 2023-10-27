@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        workingDirectory: ${{ inputs.workingDirectory }}
+        working-directory: ${{ inputs.workingDirectory }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
