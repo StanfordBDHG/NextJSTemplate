@@ -23,8 +23,8 @@ jobs:
   testandcoverage:
     name: Test and Coverage
     uses: ./.github/workflows/npm-test-and-coverage.yml
-  dockerimage:
-    name: Docker Build and Push
-    uses: ./.github/workflows/docker-build-and-push.yml
+  dockercomposetest:
+    name: Docker Compose & Test
+    uses: ./.github/workflows/docker-compose-test.yml
     with:
-      imageName: stanfordbdhg/typescripttemplate
+      testscript: test.sh
