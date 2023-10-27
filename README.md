@@ -10,14 +10,13 @@ SPDX-License-Identifier: MIT
 
 # TypeScript Template
 
-
 ## How To Use This Template
 
 The template repository contains a template TypeScript Project.
 
 Follow these steps to customize it to your needs:
-1. Rename the TypeScript project.
 
+1. Rename the TypeScript project.
 
 ## Getting Started
 
@@ -31,7 +30,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can edit the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -41,12 +39,12 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-
 ## License
+
 This project is licensed under the MIT License. See [Licenses](https://github.com/StanfordBDHG/TemplatePackage/tree/main/LICENSES) for more information.
 
-
 ## Contributors
+
 This project is developed as part of the Stanford Byers Center for Biodesign at Stanford University.
 See [CONTRIBUTORS.md](https://github.com/StanfordBDHG/TemplatePackage/tree/main/CONTRIBUTORS.md) for a full list of all TemplatePackage contributors.
 
