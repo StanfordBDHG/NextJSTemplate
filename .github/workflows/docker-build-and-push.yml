@@ -47,8 +47,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    needs:
-      - setup
     defaults:
       run:
         working-directory: ${{ inputs.workingDirectory }}
@@ -116,7 +114,6 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - build
-      - setup
     steps:
       - name: Download digests
         uses: actions/download-artifact@v3
