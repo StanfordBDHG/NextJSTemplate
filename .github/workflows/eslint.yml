@@ -42,6 +42,7 @@ jobs:
           fail-on-error: true
           markdown-report-on-step-summary: true
       - name: Upload ESLint report
+        if: always()
         uses: actions/upload-artifact@v3
         with:
           name: eslint_report.json
