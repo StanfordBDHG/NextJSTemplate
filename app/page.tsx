@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <div className="container">
       <Image
-        src={`${process.env.basePath}/stanfordbiodesign.png`}
+        src={`${process.env.basePath || ''}/stanfordbiodesign.png`}
         alt="Stanford Biodesign Logo"
-        width={200}
-        height={200}
+        width={634}
+        height={235}
       />
       <h1>
         Welcome to the Stanford Biodesign Digital Health TypeScript Template

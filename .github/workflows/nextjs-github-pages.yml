@@ -45,7 +45,7 @@ jobs:
         run: npm run build
         env:
           NEXT_JS_OUTPUT: 'export'
-          NEXT_JS_BASE_PATH: ${{ github.event.repository.name }}
+          NEXT_JS_BASE_PATH: '/${{ github.event.repository.name }}'
           NEXT_JS_IMAGES_UNOPTIMIZED: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
