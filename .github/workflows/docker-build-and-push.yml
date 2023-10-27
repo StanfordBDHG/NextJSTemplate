@@ -54,8 +54,8 @@ jobs:
       - name: Set defaults or use secrets
         id: set-outputs
         run: |
-          USERNAME="${{ secrets.username }}"
-          PASSWORD="${{ secrets.password }}"
+          USERNAME=${{ secrets.username }}
+          PASSWORD=${{ secrets.password }}
           
           if [ -z "$USERNAME" ]; then
             USERNAME=${{ github.actor }}
@@ -65,8 +65,8 @@ jobs:
             PASSWORD=${{ secrets.GITHUB_TOKEN }}
           fi
           
-          echo "::set-output name=username::$USERNAME"
-          echo "::set-output name=password::$PASSWORD"
+          echo "username=$USERNAME" >> "$GITHUB_OUTPUT"
+          echo "password=$PASSWORD" >> "$GITHUB_OUTPUT"
   build:
     runs-on: ubuntu-latest
     needs:
