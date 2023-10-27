@@ -22,3 +22,8 @@ jobs:
     name: Deploy Next.js site to GitHub Pages
     needs: buildandtest
     uses: ./.github/workflows/nextjs-github-pages.yml
+  dockerimage:
+    name: Docker Build and Push
+    uses: ./.github/workflows/docker-build-and-push.yml
+    with:
+      imageName: stanfordbdhg/typescripttemplate

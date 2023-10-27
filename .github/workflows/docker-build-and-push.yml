@@ -72,15 +72,15 @@ jobs:
         run: |
           USERNAME=${{ secrets.username }}
           PASSWORD=${{ secrets.password }}
-          
+
           if [ -z "$USERNAME" ]; then
             USERNAME=${{ github.actor }}
           fi
-          
+
           if [ -z "$PASSWORD" ]; then
             PASSWORD=${{ secrets.GITHUB_TOKEN }}
           fi
-          
+
           echo "username=$USERNAME" >> "$GITHUB_OUTPUT"
           echo "password=$PASSWORD" >> "$GITHUB_OUTPUT"
       - name: Log in to ${{ inputs.registry }}
@@ -132,15 +132,15 @@ jobs:
         run: |
           USERNAME=${{ secrets.username }}
           PASSWORD=${{ secrets.password }}
-          
+
           if [ -z "$USERNAME" ]; then
             USERNAME=${{ github.actor }}
           fi
-          
+
           if [ -z "$PASSWORD" ]; then
             PASSWORD=${{ secrets.GITHUB_TOKEN }}
           fi
-          
+
           echo "username=$USERNAME" >> "$GITHUB_OUTPUT"
           echo "password=$PASSWORD" >> "$GITHUB_OUTPUT"
       - name: Log in to ${{ inputs.registry }}

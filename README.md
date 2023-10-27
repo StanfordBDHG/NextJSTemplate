@@ -30,13 +30,16 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can edit the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Using Docker
+## Docker
 
 1. [Install Docker](https://docs.docker.com/get-docker/) on your machine.
-2. Build your container: `docker build -t nextjs-docker .`.
-3. Run your container: `docker run -p 3000:3000 nextjs-docker`.
+2. Build the image and run the docker compose setup: `docker compose -f docker-compose-development.yml up`.
 
 You can view your images created with `docker images`.
+
+Open [http://localhost](http://localhost) with your browser to see the result. You can visit [http://localhost:8080](http://localhost:8080) to see the reverse proxy setup before the main application.
+
+The `docker-compose.yml` setup contains a production-ready setup using a reverse proxy.
 
 ## Learn More
 
