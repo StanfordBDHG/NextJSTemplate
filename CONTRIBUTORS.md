@@ -8,7 +8,6 @@ SPDX-License-Identifier: MIT
 
 -->
 
-Stanford Biodesign Digital Health TypeScript Template Contributors
-====================
+# Stanford Biodesign Digital Health TypeScript Template Contributors
 
-* [Paul Schmiedmayer](https://github.com/PSchmiedmayer)
+- [Paul Schmiedmayer](https://github.com/PSchmiedmayer)

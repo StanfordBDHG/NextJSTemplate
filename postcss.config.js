@@ -6,7 +6,6 @@
 // SPDX-License-Identifier: MIT
 //
 
-
 module.exports = {
   plugins: {
     autoprefixer: {},
