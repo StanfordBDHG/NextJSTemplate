@@ -69,7 +69,7 @@ jobs:
           file: ${{ inputs.dockerFile }}
           platforms: ${{ matrix.platform }}
           labels: ${{ steps.meta.outputs.labels }}
-          outputs: type=image,name=${{ inputs.imageName }},push-by-digest=true,name-canonical=true,push=true
+          outputs: type=image,name=ghcr.io/${{ inputs.imageName }},push-by-digest=true,name-canonical=true,push=true
       - name: Export digest
         run: |
           mkdir -p /tmp/digests
@@ -109,7 +109,7 @@ jobs:
         working-directory: /tmp/digests
         run: |
           docker buildx imagetools create $(jq -cr '.tags | map("-t " + .) | join(" ")' <<< "$DOCKER_METADATA_OUTPUT_JSON") \
-            $(printf '${{ inputs.imageName }}@sha256:%s ' *)
+            $(printf 'ghcr.io/${{ inputs.imageName }}@sha256:%s ' *)
       - name: Inspect image
         run: |
-          docker buildx imagetools inspect ${{ inputs.imageName }}:${{ steps.meta.outputs.version }}
+          docker buildx imagetools inspect ghcr.io/${{ inputs.imageName }}:${{ steps.meta.outputs.version }}
