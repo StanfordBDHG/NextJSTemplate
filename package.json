@@ -14,8 +14,8 @@
   "private": true,
   "scripts": {
     "postinstall": "npm --prefix packages/example-package run build",
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "concurrently \"next dev\" \"npm --prefix packages/example-package run watch\"",
+    "build": "npm --prefix packages/example-package run build & next build",
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix & prettier --write .",
@@ -23,11 +23,11 @@
     "test": "jest"
   },
   "dependencies": {
+    "@stanfordbdhg/example-package": "file:../packages/example-package",
     "next": "^14",
     "react": "^18",
     "react-dom": "^18",
-    "sharp": "^0.32",
-    "@stanfordbdhg/example-package": "file:../packages/example-package"
+    "sharp": "^0.32"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.1.4",
@@ -37,6 +37,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10",
+    "concurrently": "^8",
     "eslint": "^8",
     "eslint-config-next": "^14",
     "eslint-config-prettier": "^9",
