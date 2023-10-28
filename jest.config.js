@@ -21,6 +21,7 @@ module.exports = {
     ],
   },
   moduleNameMapper: {
-    "^@stanfordbdhg/example-package$": "<rootDir>/packages/example-package/dist"
-  }
+    '^@stanfordbdhg/example-package$':
+      '<rootDir>/packages/example-package/dist',
+  },
 }
