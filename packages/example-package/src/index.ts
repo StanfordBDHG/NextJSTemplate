@@ -15,10 +15,10 @@
  * Docs for `generateGreeting` function.
  */
 export function generateGreeting(): Greeting {
-  return { 
-    message: "Welcome",
-    project: "Stanford Biodesign Digital Health TypeScript Template"
- }
+  return {
+    message: 'Welcome',
+    project: 'Stanford Biodesign Digital Health TypeScript Template',
+  }
 }
 
 /**
