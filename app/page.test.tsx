@@ -1,5 +1,5 @@
 //
-// This source file is part of the Stanford Biodesign Digital Health TypeScript Template open-source project
+// This source file is part of the Stanford Biodesign Digital Health Next.js Template open-source project
 //
 // SPDX-FileCopyrightText: 2023 Stanford University and the project authors (see CONTRIBUTORS.md)
 //
@@ -12,11 +12,11 @@ import '@testing-library/jest-dom'
 import Home from './page'
 
 describe('Home Component', () => {
-  it('renders the Stanford Biodesign Digital Health TypeScript Template heading', () => {
+  it('renders the Stanford Biodesign Digital Health Next.js Template heading', () => {
     const { getByText } = render(<Home />)
 
     const headingElement = getByText(
-      /Welcome to the Stanford Biodesign Digital Health TypeScript Template/i,
+      /Welcome to the Stanford Biodesign Digital Health Next.js Template/i,
     )
 
     expect(headingElement).toBeInTheDocument()

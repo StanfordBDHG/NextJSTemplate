@@ -1,6 +1,6 @@
 <!--
 
-This source file is part of the Stanford Biodesign Digital Health TypeScript Template open-source project
+This source file is part of the Stanford Biodesign Digital Health Next.js Template open-source project
 
 SPDX-FileCopyrightText: 2023 Stanford University and the project authors (see CONTRIBUTORS.md)
 
@@ -8,25 +8,25 @@ SPDX-License-Identifier: MIT
 
 -->
 
-# TypeScript Template
+# Biodesign Digital Health Next.js Template
 
-[![Build and Test](https://github.com/StanfordBDHG/TypeScriptTemplate/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/StanfordBDHG/TypeScriptTemplate/actions/workflows/build-and-test.yml)
-[![Deployment](https://github.com/StanfordBDHG/TypeScriptTemplate/actions/workflows/main.yml/badge.svg)](https://github.com/StanfordBDHG/TypeScriptTemplate/actions/workflows/main.yml)
-[![codecov](https://codecov.io/gh/StanfordBDHG/TypeScriptTemplate/graph/badge.svg?token=dfQW5eZ2up)](https://codecov.io/gh/StanfordBDHG/TypeScriptTemplate)
+[![Build and Test](https://github.com/StanfordBDHG/NextJSTemplate/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/StanfordBDHG/NextJSTemplate/actions/workflows/build-and-test.yml)
+[![Deployment](https://github.com/StanfordBDHG/NextJSTemplate/actions/workflows/main.yml/badge.svg)](https://github.com/StanfordBDHG/NextJSTemplate/actions/workflows/main.yml)
+[![codecov](https://codecov.io/gh/StanfordBDHG/NextJSTemplate/graph/badge.svg?token=dfQW5eZ2up)](https://codecov.io/gh/StanfordBDHG/NextJSTemplate)
 
 ## How To Use This Template
 
-The template repository contains a template for a Next.js project providing automated GitHub Actions and setups for code linting, testing & test coverage reports, docker deployments, a docker compose setup, local packages for modular deployment, and documentation generation and deployment.
+The template repository contains a template for a Next.js project providing automated GitHub Actions and setups for code linting, testing & test coverage reports, docker deployments, a docker compose setup, local packages for modular deployment, and documentation generation & deployment.
 
 Follow these steps to customize it to your needs:
 
-1. Rename the NextJS project.
+1. Rename the Next.js project.
 2. Modify, add, or remove the local packages found at `/packages/*` to separate code into smaller modules.
 3. Add dependencies and edit the project in `/app` and the local Node packages.
 
-The main application is automatically deployed to https://stanfordbdhg.github.io/TypeScriptTemplate/.
+The main application is automatically deployed to https://stanfordbdhg.github.io/NextJSTemplate/.
 
-The documentation of the local packages is automatically deployed to https://stanfordbdhg.github.io/TypeScriptTemplate/docs.
+The documentation of the local packages is automatically deployed to https://stanfordbdhg.github.io/NextJSTemplate/docs.
 
 ## Getting Started
 
