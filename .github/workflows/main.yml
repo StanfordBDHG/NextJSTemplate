@@ -15,15 +15,15 @@ on:
   workflow_dispatch:
 
 jobs:
-  # buildandtest:
-  #   name: Build and Test
-  #   uses: ./.github/workflows/build-and-test.yml
+  buildandtest:
+    name: Build and Test
+    uses: ./.github/workflows/build-and-test.yml
   nextjsgithubpages:
     name: Deploy Next.js site to GitHub Pages
-    # needs: buildandtest
-    uses: ./.github/workflows/nextjs-github-pages.yml
-  # dockerimage:
-  #   name: Docker Build and Push
-  #   uses: ./.github/workflows/docker-build-and-push.yml
-  #   with:
-  #     imageName: stanfordbdhg/typescripttemplate
+    needs: buildandtest
+    uses: StanfordBDHG/.github/.github/workflows/nextjs-github-pages.yml@v2
+  dockerimage:
+    name: Docker Build and Push
+    uses: StanfordBDHG/.github/.github/workflows/docker-build-and-push.yml@v2
+    with:
+      imageName: stanfordbdhg/typescripttemplate
