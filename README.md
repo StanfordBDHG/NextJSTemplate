@@ -10,15 +10,23 @@ SPDX-License-Identifier: MIT
 
 # TypeScript Template
 
+[![Build and Test](https://github.com/StanfordBDHG/TypeScriptTemplate/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/StanfordBDHG/TypeScriptTemplate/actions/workflows/build-and-test.yml)
+[![Deployment](https://github.com/StanfordBDHG/TypeScriptTemplate/actions/workflows/main.yml/badge.svg)](https://github.com/StanfordBDHG/TypeScriptTemplate/actions/workflows/main.yml)
+[![codecov](https://codecov.io/gh/StanfordBDHG/TypeScriptTemplate/graph/badge.svg?token=dfQW5eZ2up)](https://codecov.io/gh/StanfordBDHG/TypeScriptTemplate)
+
 ## How To Use This Template
 
-The template repository contains a template for a Next.js project providing automated GitHub Actions and setups for code linting, testing & test coverage report, docker deployments, a docker compose setup, local packages for modular deployment, and documentation generation and deployment.
+The template repository contains a template for a Next.js project providing automated GitHub Actions and setups for code linting, testing & test coverage reports, docker deployments, a docker compose setup, local packages for modular deployment, and documentation generation and deployment.
 
 Follow these steps to customize it to your needs:
 
 1. Rename the NextJS project.
-2. Modify, add, or remove the local packages found at `/packages/*` to separate code out into smaller modules.
-3. Add additional dependencies and edit the project in `/app` and the local Node packages.
+2. Modify, add, or remove the local packages found at `/packages/*` to separate code into smaller modules.
+3. Add dependencies and edit the project in `/app` and the local Node packages.
+
+The main application is automatically deployed to https://stanfordbdhg.github.io/TypeScriptTemplate/.
+
+The documentation of the local packages is automatically deployed to https://stanfordbdhg.github.io/TypeScriptTemplate/docs.
 
 ## Getting Started
 
@@ -50,6 +58,8 @@ You can view your images created with `docker images`.
 Open [http://localhost](http://localhost) with your browser to see the result. You can visit [http://localhost:8080](http://localhost:8080) to see the reverse proxy setup before the main application.
 
 The `docker-compose.yml` setup contains a production-ready setup using a reverse proxy.
+
+Every version of the application on the `main` branch is automatically packaged into docker images using the `main` tag. Every release is also published using the `latest` and respective version tags.
 
 ## Learn More
 
