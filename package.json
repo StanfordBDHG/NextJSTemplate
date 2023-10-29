@@ -13,7 +13,6 @@
   },
   "private": true,
   "scripts": {
-    "postinstall": "npm --prefix packages/example-package run build",
     "dev": "concurrently \"next dev\" \"npm --prefix packages/example-package run watch\"",
     "prebuild": "npm --prefix packages/example-package run build",
     "build": "next build",
