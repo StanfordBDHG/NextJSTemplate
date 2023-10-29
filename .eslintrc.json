@@ -1,9 +1,7 @@
 {
   "extends": ["next/core-web-vitals", "prettier"],
   "plugins": ["prettier"],
-  "ignorePatterns": [
-    "**/dist/*.js"
-  ],
+  "ignorePatterns": ["**/dist/*.js"],
   "rules": {
     "prettier/prettier": "error"
   }

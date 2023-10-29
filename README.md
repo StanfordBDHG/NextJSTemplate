@@ -12,15 +12,25 @@ SPDX-License-Identifier: MIT
 
 ## How To Use This Template
 
-The template repository contains a template TypeScript Project.
+The template repository contains a template for a Next.js project providing automated GitHub Actions and setups for code linting, testing & test coverage report, docker deployments, a docker compose setup, local packages for modular deployment, and documentation generation and deployment.
 
 Follow these steps to customize it to your needs:
 
-1. Rename the TypeScript project.
+1. Rename the NextJS project.
+2. Modify, add, or remove the local packages found at `/packages/*` to separate code out into smaller modules.
+3. Add additional dependencies and edit the project in `/app` and the local Node packages.
 
 ## Getting Started
 
 You can run the project using the following command. You will need to install Node.js and npm, e.g., using [homebrew (recommended for macOS)](https://formulae.brew.sh/formula/node) or the official [Node.js installer](https://nodejs.org/en/download).
+
+1. Install All Dependencies
+
+```bash
+npm install
+```
+
+1. Start the Next.js Application
 
 ```bash
 npm run dev
