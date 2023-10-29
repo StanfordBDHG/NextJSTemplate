@@ -1,5 +1,5 @@
 #
-# This source file is part of the Stanford Biodesign Digital Health TypeScript Template open-source project
+# This source file is part of the Stanford Biodesign Digital Health Next.js Template open-source project
 #
 # SPDX-FileCopyrightText: 2023 Stanford University and the project authors (see CONTRIBUTORS.md)
 #
@@ -26,4 +26,4 @@ jobs:
     name: Docker Build and Push
     uses: StanfordBDHG/.github/.github/workflows/docker-build-and-push.yml@v2
     with:
-      imageName: stanfordbdhg/typescripttemplate
+      imageName: stanfordbdhg/nextjstemplate

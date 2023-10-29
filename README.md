@@ -1,6 +1,6 @@
 <!--
 
-This source file is part of the Stanford Biodesign Digital Health TypeScript Template open-source project
+This source file is part of the Stanford Biodesign Digital Health Next.js Template open-source project
 
 SPDX-FileCopyrightText: 2023 Stanford University and the project authors (see CONTRIBUTORS.md)
 
@@ -8,25 +8,25 @@ SPDX-License-Identifier: MIT
 
 -->
 
-# TypeScript Template
+# Biodesign Digital Health Next.js Template
 
-[![Build and Test](https://github.com/StanfordBDHG/TypeScriptTemplate/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/StanfordBDHG/TypeScriptTemplate/actions/workflows/build-and-test.yml)
-[![Deployment](https://github.com/StanfordBDHG/TypeScriptTemplate/actions/workflows/main.yml/badge.svg)](https://github.com/StanfordBDHG/TypeScriptTemplate/actions/workflows/main.yml)
-[![codecov](https://codecov.io/gh/StanfordBDHG/TypeScriptTemplate/graph/badge.svg?token=dfQW5eZ2up)](https://codecov.io/gh/StanfordBDHG/TypeScriptTemplate)
+[![Build and Test](https://github.com/StanfordBDHG/NextJSTemplate/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/StanfordBDHG/NextJSTemplate/actions/workflows/build-and-test.yml)
+[![Deployment](https://github.com/StanfordBDHG/NextJSTemplate/actions/workflows/main.yml/badge.svg)](https://github.com/StanfordBDHG/NextJSTemplate/actions/workflows/main.yml)
+[![codecov](https://codecov.io/gh/StanfordBDHG/NextJSTemplate/graph/badge.svg?token=dfQW5eZ2up)](https://codecov.io/gh/StanfordBDHG/NextJSTemplate)
 
 ## How To Use This Template
 
-The template repository contains a template for a Next.js project providing automated GitHub Actions and setups for code linting, testing & test coverage reports, docker deployments, a docker compose setup, local packages for modular deployment, and documentation generation and deployment.
+The template repository contains a template for a Next.js project providing automated GitHub Actions and setups for code linting, testing & test coverage reports, docker deployments, a docker compose setup, local packages for modular deployment, and documentation generation & deployment.
 
 Follow these steps to customize it to your needs:
 
-1. Rename the NextJS project.
+1. Rename the Next.js project.
 2. Modify, add, or remove the local packages found at `/packages/*` to separate code into smaller modules.
 3. Add dependencies and edit the project in `/app` and the local Node packages.
 
-The main application is automatically deployed to https://stanfordbdhg.github.io/TypeScriptTemplate/.
+The main application is automatically deployed to https://stanfordbdhg.github.io/NextJSTemplate/.
 
-The documentation of the local packages is automatically deployed to https://stanfordbdhg.github.io/TypeScriptTemplate/docs.
+The documentation of the local packages is automatically deployed to https://stanfordbdhg.github.io/NextJSTemplate/docs.
 
 ## Getting Started
 
@@ -44,7 +44,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.<!-- markdown-link-check-disable-line -->
 
 You can edit the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
@@ -55,7 +55,7 @@ You can edit the page by modifying `app/page.tsx`. The page auto-updates as you 
 
 You can view your images created with `docker images`.
 
-Open [http://localhost](http://localhost) with your browser to see the result. You can visit [http://localhost:8080](http://localhost:8080) to see the reverse proxy setup before the main application.
+Open [http://localhost](http://localhost) with your browser to see the result. You can visit [http://localhost:8080](http://localhost:8080) to see the reverse proxy setup before the main application.<!-- markdown-link-check-disable-line -->
 
 The `docker-compose.yml` setup contains a production-ready setup using a reverse proxy.
 
@@ -72,12 +72,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## License
 
-This project is licensed under the MIT License. See [Licenses](https://github.com/StanfordBDHG/TemplatePackage/tree/main/LICENSES) for more information.
+This project is licensed under the MIT License. See [Licenses](https://github.com/StanfordBDHG/NextJSTemplate/tree/main/LICENSES) for more information.
 
 ## Contributors
 
 This project is developed as part of the Stanford Byers Center for Biodesign at Stanford University.
-See [CONTRIBUTORS.md](https://github.com/StanfordBDHG/TemplatePackage/tree/main/CONTRIBUTORS.md) for a full list of all TemplatePackage contributors.
+See [CONTRIBUTORS.md](https://github.com/StanfordBDHG/NextJSTemplate/tree/main/CONTRIBUTORS.md) for a full list of all Next.js Template contributors.
 
 ![Stanford Byers Center for Biodesign Logo](https://raw.githubusercontent.com/StanfordBDHG/.github/main/assets/biodesign-footer-light.png#gh-light-mode-only)
 ![Stanford Byers Center for Biodesign Logo](https://raw.githubusercontent.com/StanfordBDHG/.github/main/assets/biodesign-footer-dark.png#gh-dark-mode-only)

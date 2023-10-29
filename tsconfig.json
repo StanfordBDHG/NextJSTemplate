@@ -27,7 +27,7 @@
   "exclude": ["node_modules"],
   "typedocOptions": {
     "entryPoints": ["packages/*"],
-    "name": "Stanford Biodesign Digital Health TypeScript Template",
+    "name": "Stanford Biodesign Digital Health Next.js Template",
     "entryPointStrategy": "packages",
     "includeVersion": false
   }

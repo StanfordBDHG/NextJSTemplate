@@ -11,6 +11,6 @@
 set -e
 
 CONTENT=$(curl --fail http://localhost)
-echo "$CONTENT" | grep "Welcome to the Stanford Biodesign Digital Health TypeScript Template"
+echo "$CONTENT" | grep "Welcome to the Stanford Biodesign Digital Health Next.js Template"
 
 echo "✅ Test Passed!"
