@@ -2,7 +2,7 @@
   "name": "typescripttemplate",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "Stanford BDHG TypeScript Template",
+  "description": "Stanford Biodesign Digital Health TypeScript Template",
   "keywords": [
     "Stanford",
     "Biodesign"
@@ -21,7 +21,9 @@
     "lint:fix": "eslint . --fix & prettier --write .",
     "lint:ci": "eslint --output-file eslint_report.json --format json .",
     "pretest": "npm --prefix packages/example-package run build",
-    "test": "jest"
+    "test": "jest",
+    "docs": "typedoc",
+    "docs:ci": "typedoc --out ./out/docs --githubPages true"
   },
   "dependencies": {
     "@stanfordbdhg/example-package": "file:../packages/example-package",
@@ -48,6 +50,7 @@
     "postcss": "^8",
     "prettier": "^3",
     "ts-jest": "^29",
+    "typedoc": "^0.25",
     "typescript": "^5"
   }
 }
