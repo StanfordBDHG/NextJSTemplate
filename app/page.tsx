@@ -7,8 +7,11 @@
 //
 
 import Image from 'next/image'
+import { generateGreeting } from '@stanfordbdhg/example-package'
 
 export default function Home() {
+  const greeting = generateGreeting()
+
   return (
     <div className="container">
       <Image
@@ -17,9 +20,7 @@ export default function Home() {
         width={634}
         height={235}
       />
-      <h1>
-        Welcome to the Stanford Biodesign Digital Health TypeScript Template
-      </h1>
+      <h1>{`${greeting.message} to the ${greeting.project}`}</h1>
     </div>
   )
 }
