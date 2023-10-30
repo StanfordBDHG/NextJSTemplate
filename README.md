@@ -13,6 +13,7 @@ SPDX-License-Identifier: MIT
 [![Build and Test](https://github.com/StanfordBDHG/NextJSTemplate/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/StanfordBDHG/NextJSTemplate/actions/workflows/build-and-test.yml)
 [![Deployment](https://github.com/StanfordBDHG/NextJSTemplate/actions/workflows/main.yml/badge.svg)](https://github.com/StanfordBDHG/NextJSTemplate/actions/workflows/main.yml)
 [![codecov](https://codecov.io/gh/StanfordBDHG/NextJSTemplate/graph/badge.svg?token=dfQW5eZ2up)](https://codecov.io/gh/StanfordBDHG/NextJSTemplate)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10052055.svg)](https://doi.org/10.5281/zenodo.10052055)
 
 ## How To Use This Template
 
