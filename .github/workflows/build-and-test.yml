@@ -23,6 +23,8 @@ jobs:
   eslint:
     name: ESLint
     uses: StanfordBDHG/.github/.github/workflows/eslint.yml@v2
+    permissions:
+      checks: write
   testandcoverage:
     name: Test and Coverage
     uses: StanfordBDHG/.github/.github/workflows/npm-test-and-coverage.yml@v2
