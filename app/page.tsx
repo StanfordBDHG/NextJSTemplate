@@ -13,14 +13,16 @@ export default function Home() {
   const greeting = generateGreeting()
 
   return (
-    <div className="container">
-      <Image
-        src={`${process.env.basePath || ''}/stanfordbiodesign.png`}
-        alt="Stanford Biodesign Logo"
-        width={634}
-        height={235}
-      />
-      <h1>{`${greeting.message} to the ${greeting.project}`}</h1>
+    <div className="flex justify-center items-center min-h-screen">
+      <div className="flex flex-col items-center">
+        <Image
+          src={`${process.env.basePath || ''}/stanfordbiodesign.png`}
+          alt="Stanford Biodesign Logo"
+          width={634}
+          height={235}
+        />
+        <h1 className="text-3xl text-center mt-4">{`${greeting.message} to the ${greeting.project}`}</h1>
+      </div>
     </div>
   )
 }
