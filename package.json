@@ -49,6 +49,7 @@
     "jest-environment-jsdom": "^29",
     "postcss": "^8",
     "prettier": "^3",
+    "tailwindcss": "^3",
     "ts-jest": "^29",
     "typedoc": "^0.25",
     "typescript": "^5"
