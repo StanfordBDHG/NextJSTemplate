@@ -24,10 +24,12 @@ jobs:
     name: ESLint
     uses: StanfordBDHG/.github/.github/workflows/eslint.yml@v2
     permissions:
-      checks: write
+      contents: read
   testandcoverage:
     name: Test and Coverage
     uses: StanfordBDHG/.github/.github/workflows/npm-test-and-coverage.yml@v2
+    secrets:
+      token: ${{ secrets.CODECOV_TOKEN }}
   dockercomposetest:
     name: Docker Compose & Test
     uses: StanfordBDHG/.github/.github/workflows/docker-compose-test.yml@v2
