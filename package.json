@@ -41,7 +41,7 @@
     "@types/react-dom": "^18",
     "autoprefixer": "^10",
     "concurrently": "^8",
-    "eslint": "^9",
+    "eslint": "^8",
     "eslint-config-next": "^14",
     "eslint-config-prettier": "^9",
     "eslint-plugin-prettier": "^5",
