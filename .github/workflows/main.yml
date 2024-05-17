@@ -24,7 +24,7 @@ jobs:
   nextjsgithubpages:
     name: Deploy Next.js site to GitHub Pages
     needs: buildandtest
-    uses: StanfordBDHG/.github/.github/workflows/nextjs-github-pages.yml@v2
+    uses: StanfordBDHG/.github/.github/workflows/nextjs-github-pages.yml@codeql
     permissions:
       contents: read
       pages: write
