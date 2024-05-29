@@ -48,3 +48,6 @@ eslint_report.json
 
 # docs
 docs
+
+# editors
+.idea/
