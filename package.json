@@ -28,6 +28,7 @@
   "dependencies": {
     "@stanfordbdhg/example-package": "file:../packages/example-package",
     "next": "^14",
+    "prettier-plugin-tailwindcss": "^0.5.14",
     "react": "^18",
     "react-dom": "^18",
     "sharp": "^0.33"
