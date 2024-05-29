@@ -7,15 +7,15 @@
 //
 
 import React from 'react'
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import Home from './page'
 
 describe('Home Component', () => {
   it('renders the Stanford Biodesign Digital Health Next.js Template heading', () => {
-    const { getByText } = render(<Home />)
+    render(<Home />)
 
-    const headingElement = getByText(
+    const headingElement = screen.getByText(
       /Welcome to the Stanford Biodesign Digital Health Next.js Template/i,
     )
 
@@ -23,9 +23,9 @@ describe('Home Component', () => {
   })
 
   it('renders the Stanford Biodesign Logo', () => {
-    const { getByAltText } = render(<Home />)
+    render(<Home />)
 
-    const imageElement = getByAltText(
+    const imageElement = screen.getByAltText(
       'Stanford Biodesign Logo',
     ) as HTMLImageElement
 
