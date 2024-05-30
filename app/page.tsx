@@ -16,7 +16,7 @@ export default function Home() {
     <div className="flex min-h-screen items-center justify-center">
       <div className="flex flex-col items-center">
         <Image
-          src={`${process.env.basePath || ''}/stanfordbiodesign.png`}
+          src={`${process.env.basePath ?? ''}/stanfordbiodesign.png`}
           alt="Stanford Biodesign Logo"
           width={634}
           height={235}

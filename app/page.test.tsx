@@ -24,9 +24,9 @@ describe('Home Component', () => {
   it('renders the Stanford Biodesign Logo', () => {
     render(<Home />)
 
-    const imageElement = screen.getByAltText(
+    const imageElement: HTMLImageElement = screen.getByAltText(
       'Stanford Biodesign Logo',
-    ) as HTMLImageElement
+    )
 
     expect(imageElement).toBeInTheDocument()
     expect(imageElement.src).toContain('stanfordbiodesign.png')

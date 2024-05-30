@@ -25,6 +25,6 @@ export function generateGreeting(): Greeting {
  * A greeting with a message and a proejct name.
  */
 export interface Greeting {
-  message: String
-  project: String
+  message: string
+  project: string
 }
