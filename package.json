@@ -15,11 +15,12 @@
   "scripts": {
     "dev": "concurrently \"next dev\" \"npm --prefix packages/example-package run watch\"",
     "prebuild": "npm --prefix packages/example-package run build",
+    "buildTypes": "npm --prefix packages/example-package run buildTypes",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix & prettier --write .",
-    "lint:ci": "eslint --output-file eslint_report.json --format json .",
+    "lint:ci": "yarn run buildTypes && eslint --output-file eslint_report.json --format json .",
     "pretest": "npm --prefix packages/example-package run build",
     "test": "jest",
     "docs": "typedoc",
