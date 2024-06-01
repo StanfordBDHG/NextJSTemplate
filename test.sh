@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# This source file is part of the Stanford OwnYourData Application project
+# This source file is part of the Stanford Biodesign Digital Health Next.js Template open-source project
 #
 # SPDX-FileCopyrightText: 2023 Stanford University
 #
