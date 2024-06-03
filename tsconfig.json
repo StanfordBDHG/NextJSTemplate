@@ -19,9 +19,6 @@
         "name": "next"
       }
     ],
-    "paths": {
-      "@stanfordbdhg/example-package": ["./packages/example-package/dist"]
-    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"],
