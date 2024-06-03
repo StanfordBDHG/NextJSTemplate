@@ -37,6 +37,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^6",
     "@testing-library/react": "^15",
+    "@total-typescript/ts-reset": "^0.5.1",
     "@types/jest": "^29",
     "@types/node": "^20",
     "@types/react": "^18",
