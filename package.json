@@ -20,7 +20,7 @@
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix & prettier --write .",
-    "lint:ci": "yarn run buildTypes && eslint --output-file eslint_report.json --format json .",
+    "lint:ci": "npm run buildTypes && eslint --output-file eslint_report.json --format json .",
     "pretest": "npm --prefix packages/example-package run build",
     "test": "jest",
     "docs": "typedoc",
