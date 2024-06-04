@@ -6,7 +6,7 @@
     "module": "commonjs",
     "target": "es6",
     "lib": ["esnext"],
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "rootDir": "src",
     "outDir": "dist",
     "esModuleInterop": true,
