@@ -2,10 +2,12 @@
   "name": "@stanfordbdhg/example-package",
   "version": "0.1.0",
   "private": true,
-  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "buildTypes": "tsc --emitDeclarationOnly",
     "watch": "tsc -w"
+  },
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
   }
 }
